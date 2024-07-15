@@ -1,4 +1,4 @@
-package week.Assignment;
+
 import java.util.*;
 
 public class Patternhw {
@@ -209,7 +209,7 @@ public class Patternhw {
         System.out.println();
     }*/
     //ques15
-    for(int i=n; i>=1; i--){
+    /*for(int i=n; i>=1; i--){
         for(int k=n-i; k>=1; k--){
 
         
@@ -224,7 +224,7 @@ public class Patternhw {
 
 
     }
-    for(int i=1; i<=n; i++){
+    for(int i=2; i<=n; i++){
         for(int k=1; k<=n-i; k++){
 
         
@@ -238,9 +238,9 @@ public class Patternhw {
         System.out.println();
 
 
-    }
+    }*/
 
-    
+   sc.close(); 
 }
 }
     

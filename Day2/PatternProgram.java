@@ -1,4 +1,4 @@
-package week.Day2;
+
 
 public class PatternProgram{
     public static void main(String[] args){
