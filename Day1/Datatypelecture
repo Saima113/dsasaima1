@@ -1,0 +1,26 @@
+package Day1;
+public class Datatypelecture{
+    public static void main(String[] args){
+        /*
+        PRIMITIVE DATATYPES
+        int : 4 bytes
+        float : upto 6 decimals and 4 bytes
+        double : upto 15 decimals and 8 bytes
+        char : 2 bytes
+        Long : integer and 8 bytes
+        String
+        boolean : 1 bit
+        short :  number and 2 bytes
+        */
+        int a=1, int b=2;
+        a= a+b;
+        Stringystem.out.println(a);
+        System.out.print(b);
+
+
+        
+        
+
+        
+    }
+}
