@@ -80,6 +80,20 @@ public class Arrayques{
         }
         return max;
     }
+     //find index of minimum element
+    public static int minarr(int[] arr , int a){
+        int min= a;
+
+        
+        for(int i=a+1; i<arr.length; i++){
+            if(arr[i]<arr[min]){
+                min= i;
+            }
+        }
+        return min;
+    }
+
+    
 
 
 
@@ -92,11 +106,9 @@ public class Arrayques{
         
        
     public static void main(String[] args){
-        int arr[]={12,4,23,94,118,100}; 
+        int arr[]={4,23,94,118,100}; 
         
-        revarray1(arr, 2, 4);
-        display(arr);
-       
+        System.out.print(minarr(arr, 3));
 
     }
     }
