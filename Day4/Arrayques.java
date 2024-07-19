@@ -80,11 +80,34 @@ public class Arrayques{
         }
         return max;
     }
-     //find index of minimum element
-    public static int minarr(int[] arr , int a){
-        int min= a;
+    public static int maxarrindex(int[] arr){
+        int max= 0;
+        int ans=0;
+         for(int i=0; i<arr.length; i++){
+            if(arr[i]>max){
+                max= arr[i];
+                ans=i;
+            }
+        }
+        return ans;
+    }
 
+    static int[] selectionSort(int[] arr){
+        int[] ans= new int [arr.length];
+        for(int i=0;i<arr.length-1;i++){
+           int idx= minarr(arr, i);
+           
+            int temp=arr[i];
+            arr[i]= arr[idx];
+            arr[idx]=temp; 
+            ans[i]= arr[i];  
+        }
+        return  ans;
         
+    }
+    //find index of minimum element
+    public static int minarr(int[] arr, int a ){
+        int min= a;
         for(int i=a+1; i<arr.length; i++){
             if(arr[i]<arr[min]){
                 min= i;
@@ -92,23 +115,9 @@ public class Arrayques{
         }
         return min;
     }
-
-    
-
-
-
-       
-        
-        
-        
-        
-
-        
-       
     public static void main(String[] args){
-        int arr[]={4,23,94,118,100}; 
-        
-        System.out.print(minarr(arr, 3));
+        int arr[]={17,4,3,12,81,22,1}; 
+        System.out.println(selectionSort( arr));
 
     }
     }
