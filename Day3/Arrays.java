@@ -66,7 +66,8 @@ public class Arrays {
         arr[1]=10;
         arr[6]=25;
         arr[9]=76;
-       System.out.println( Armstrong( 3));
+       System.out.println(findLength( 25365));
+       
        
        
         

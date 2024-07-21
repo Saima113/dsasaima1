@@ -1,14 +1,11 @@
 package Day4;
+import java.util.*;
 
 
 public class Arrayques{
-    /*public static int arrsum( ){
+    public static int arrsum( ){
         int arr[] = {12, 13, 14, 15, 16};
         int sum=0;
-        
-            
-        
-
         for(int i=0 ; i<arr.length; i++){
             sum+=arr[i];
 
@@ -26,7 +23,7 @@ public class Arrayques{
         return -1;
         
       
-    }*/
+    }
     public static void swap(int a , int b){
         int temp=0;
         temp=a;
@@ -41,6 +38,7 @@ public class Arrayques{
     {int temp= adi[i];
         adi[i]= adi[j];
         adi[j]= temp;
+        
     }
 
     public static void revarray(int[] arr){
@@ -55,25 +53,19 @@ public class Arrayques{
             System.out.print(+arr[i]+" ");
 
         }
-        
-
      }
-     public static void revarray1(int[] arr, int i, int j){
 
-     
+     public static void revarray1(int[] arr, int i, int j){
         while(i<j){
             change(arr, i++, j--);
-        }
-        
+        }     
     }
 
       
 
     public static int maxarr(int[] arr){
         int max= arr[0];
-
-        
-        for(int i=0; i<arr.length; i++){
+     for(int i=0; i<arr.length; i++){
             if(arr[i]>max){
                 max= arr[i];
             }
@@ -117,7 +109,7 @@ public class Arrayques{
     }
     public static void main(String[] args){
         int arr[]={17,4,3,12,81,22,1}; 
-        System.out.println(selectionSort( arr));
+        
 
     }
     }
