@@ -1,4 +1,5 @@
 package Day3;
+import java.util.*;
 
 //100+2*4 100 is total array 2 is index to find out and 4 is size
 public class Arrays {
@@ -21,18 +22,24 @@ public class Arrays {
            return revnum;
         
     }
-    public static int findLength(int n){
-        
+    public static int findLength(){
+        Scanner sc= new Scanner (System.in);
+        int n= sc.nextInt();
+        int digit= sc.nextInt();
         int count=0;
         while(n>0){
+            int ld=n%10;
+            if(ld==digit)
             count++;
             n=n/10;
         }
         return count;
 
     }
-    public static boolean Armstrong(int n){
-        int c= findLength(3);
+    public static boolean Armstrong(){
+        Scanner sc= new Scanner(System.in);
+		int n= sc.nextInt();
+        int c= findLength();
         int temp =n;
         int sum=0;
         for(int i=1; i<=c; i++){
@@ -46,27 +53,24 @@ public class Arrays {
         return false;
 
     }
-    public static boolean primeNumber(int a ){
-        for(int i=2; i<a; i++){
-            if(a%i==0)
-                return false;}
+    public static boolean primeNumber(){
+        Scanner sc= new Scanner(System.in);
+		int N= sc.nextInt();
+        for(int i=2; i<N; i++){
+            if(N%i==0)
+                return false;
+            }
             
             
         return true;
-
-        
-        
-        
-        
-
-
     }
     public static void main(String[] args){                                                                                                     
         int arr[]= new int[10];
         arr[1]=10;
         arr[6]=25;
         arr[9]=76;
-       System.out.println(findLength( 25365));
+       
+       System.out.println(primeNumber());
        
        
        
