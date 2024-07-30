@@ -22,7 +22,7 @@ public class twodarray {
         Scanner sc= new Scanner(System.in);
         for(int i=0; i<arr.length;i++){
             for(int j=0; j<arr[0].length;j++)
-            arr[i][j]=nums++;;
+            arr[i][j]=nums++;
         }
 
     }
@@ -61,7 +61,7 @@ public class twodarray {
         int[][] arr= {
             {2,3,4,5},
             {6,9,8,1},
-            {4,4,5,8}
+            {4,4,9,8}
 
         };
         //Arrays.sort(arr);
