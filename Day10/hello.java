@@ -10,20 +10,22 @@ public class hello {
         while(low<=high){
             mid=(low+high)/2;
             if(arr[mid][col]<target){
-            low=mid+1;
+            /*low=mid+1;
             }
             else{
                 ans=mid;
                 high=mid-1;
-            }
+            }*/
         }
         System.out.println(arr[0][col]);
-        //System.out.println(high);
-        //System.out.println(col);
-        int ew=(0+0)/2;
-        System.out.println(ew);
+        System.out.println(high);
+        System.out.println(col);
+        System.out.println(mid);
+        System.out.println(arr[mid][col]);
+        
       return ans;
     }
+}
     public static void main(String[] args){
         int[][] arr={
             {1,3,5,7},
