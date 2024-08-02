@@ -1,7 +1,7 @@
 package Day10;
 
 public class hello {
-   public static int findRow(int[][]arr, int target){
+   public static void findRow(int[][]arr, int target){
         int col=arr[0].length-1;// 7,20,60
         int ans=-1;
         int mid=0;
@@ -23,7 +23,7 @@ public class hello {
         System.out.println(mid);
         System.out.println(arr[mid][col]);
         
-      return ans;
+      
     }
 }
     public static void main(String[] args){

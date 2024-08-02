@@ -32,7 +32,7 @@ public class strings {
     //str.equalsIgnoreCase()
     //compareto gives integer  value
      public static boolean palindrome1(String str){
-        return(str.equals(reverseName(str)));
+        return(str.equals(reverseName(str))); // t or f
         
      }
      //trim() 
@@ -62,6 +62,7 @@ public class strings {
         for(int i=0;i<str.length();i++){
             if(str.charAt(i)==curr){
                 len++;
+                ans=Math.max(ans,len);
             }
             else{
                 curr=str.charAt(i);
@@ -79,7 +80,7 @@ public class strings {
         //System.out.println("*"+s1.trim()+"*");
         //System.out.println(reverse(s1));
         //subString("delusion",0,8);
-        System.out.println(count("aaauuqqqqqq"));
+        System.out.println(count("saimaaaaaaaaaaaaaaaaaaaaa"));
         //String s2 = new String("hi");
         //String s3 = "hi";
         //char[] s4={'h','i'};
@@ -93,7 +94,7 @@ public class strings {
          // heap memory and stack memory
          // if you modify a string it makes the new copy at a different address
      
-         //System.out.println(reverseName("saima"));
+         //System.out.println(palindrome1("saima"));
          
           
 

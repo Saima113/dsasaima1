@@ -13,7 +13,7 @@ public class arrayList {
         arr.add(4);
         arr.add(3);
         // accessing an element
-        /*System.out.println(arr.get(2)); //3
+        System.out.println(arr.get(2)); //3
 
         //removing an element
         System.out.println(arr.remove(3)); // returns the element that was removed // 4
@@ -27,7 +27,8 @@ public class arrayList {
         System.out.println(arr.set(0,10));
         System.out.println(arr.size());
         System.out.println(arr);
-        //sorting*/
+        
+        //sorting
         Collections.sort(arr);
         System.out.println(arr);
         
