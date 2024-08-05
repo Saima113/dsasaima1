@@ -7,7 +7,7 @@ public class store {
     private int fruit_code=-1;
     private int fruit_color=-1;
     //Branch class branch obj= new Branch();
-    fruits f= new fruits();
+    fruits f= new fruits(); // making objects of those two classes which hold info we need to print
     color c=new color();
 
     public store(){}
