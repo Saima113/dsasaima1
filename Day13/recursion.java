@@ -30,9 +30,10 @@ public class recursion {
         if(n==1){
             return count;
         }
-        if(n%2==0) count++;
-
-        return countEven(n-1,count);
+        if(n%2==0) {
+            count++;
+        }
+         return countEven(n-1,count);
     }
 
 
@@ -91,7 +92,7 @@ public class recursion {
     }
 
      public static void main (String[] args){
-        int n=5;
+        int n=10;
         //print(n);
 
         //int sum=sum(n,0);
@@ -99,7 +100,7 @@ public class recursion {
            // sum+=i;
             //System.out.println(sum);
             
-            //System.out.println(countEven(n,0));
+            System.out.println(countEven(n,0));
            
             System.out.println(fibonaccitail(9,1)); 
 
