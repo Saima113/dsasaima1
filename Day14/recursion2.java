@@ -52,7 +52,7 @@ public class recursion2 {
         String ans=" ";
         String s="cat";
         //cointoss(N," ");
-        //subsequence(s,ans);
+        subsequence(s,ans);
         //System.out.println(subseqcount(s));
         validparenthesis(n, l, r, ans);
         
