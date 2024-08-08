@@ -30,9 +30,9 @@ public class backtracking {
     
      public static void main (String[] args){
         int[] arr={1,2,3,4,15,7};
-        sumArray(arr,0,15);
+        sumArray(arr,0,10);
         System.out.println(sum);
-        System.out.println(backsumarray(arr, 0, 15));
+        // System.out.println(backsumarray(arr, 0, 15));
        
      }
     

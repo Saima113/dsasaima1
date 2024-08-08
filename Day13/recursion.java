@@ -1,17 +1,17 @@
 package Day13;
 
 public class recursion {
+    //printing numbers
     public static void print(int n){
         //base case
-        if(n==10){
+        if(n==5){
             System.out.println(n);
             return;
         }// else
         System.out.println(n);
         print(n+1);
     }
-
-
+   //tail recursion
     static int sum(int n, int a){
         if(n==1){
             return a+n;
@@ -92,17 +92,17 @@ public class recursion {
     }
 
      public static void main (String[] args){
-        int n=10;
+        int n=5;
         //print(n);
 
-        //int sum=sum(n,0);
-        //for(int i=n;i>=1;i--)
-           // sum+=i;
-            //System.out.println(sum);
+            // int sum=sum(n,0);
+            // System.out.println(sum);
+            //System.out.println(sumHead(n));
             
-            System.out.println(countEven(n,0));
+            //System.out.println(countEven(n,0));
+            System.out.println(countEvenHead(n));
            
-            System.out.println(fibonaccitail(9,1)); 
+            // System.out.println(fibonaccitail(9,1)); 
 
     }
 

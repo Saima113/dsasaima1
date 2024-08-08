@@ -31,6 +31,8 @@ public class arrayList {
         //sorting
         Collections.sort(arr);
         System.out.println(arr);
+
+        //contains funtion
         
 
     }
