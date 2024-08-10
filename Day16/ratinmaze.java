@@ -20,7 +20,7 @@ public class ratinmaze {
             display(n,m);
             return true;
         }
-        //iff curr box is valid then move otherwise return and give false
+        //if curr box is valid then move otherwise return and give false
         if( i>=0 && i<n && j>=0 && j<m && maze[i][j]!='X'&& sol[i][j]==0){
             sol[i][j]=1;
             //moving right
@@ -47,7 +47,7 @@ public class ratinmaze {
             {'0', '0', '0', 'X', '0'}
         };
         RIAM(maze, 0, 0, 5, 5); // to change position of rat,change i and j
-        //display(5,5);
+        
 
      }
     
