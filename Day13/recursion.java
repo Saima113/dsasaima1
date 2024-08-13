@@ -63,7 +63,7 @@ public class recursion {
     }
     //head
     static int factorial(int n){
-        if(n==1 || n==0){
+        if(n==1 || n==0){ //either true of both will give total true
             return 1;
         }
         return n*factorial(n-1);    
@@ -84,25 +84,33 @@ public class recursion {
 
     }
     //tail fibonacci
-    static int fibonaccitail(int n,int ans){
-        if(n==0 || n==1){
-            return ans;
+    static int fibonaccitail(int n,int a,int b){
+        if(n==0){
+            return a;
         }
-        return ans=fibonaccitail(n-1,ans)+fibonaccitail(n-2,ans);
+        if(n==1){
+            return b;
+        }
+        
+        return fibonaccitail(n-1,a,b)+fibonaccitail(n-2, a, b);
+        
     }
 
      public static void main (String[] args){
-        int n=5;
+        // System.out.println(factorial(5));
+        // System.out.println(factorialtail(5,1));
+        // System.out.println(power(2, 4));
+        // System.out.println(powertail(2,4,1));
+        //int n=5;
         //print(n);
 
-            // int sum=sum(n,0);
+            //  int sum=sum(n,1);
             // System.out.println(sum);
-            //System.out.println(sumHead(n));
-            
-            //System.out.println(countEven(n,0));
-            System.out.println(countEvenHead(n));
-           
-            // System.out.println(fibonaccitail(9,1)); 
+            // System.out.println(sumHead(n));
+            // System.out.println(countEven(n,0));
+            // System.out.println(countEvenHead(n));
+            System.out.println(fibonacci(9));
+            System.out.println(fibonaccitail(9,0,1)); 
 
     }
 

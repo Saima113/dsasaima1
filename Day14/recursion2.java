@@ -26,7 +26,9 @@ public class recursion2 {
         return 1;
         }
         int num1=subseqcount(ques.substring(1)); // when included
+        System.out.println(num1);
         //int num2=subseqcount(ques.substring(1)); // when not included
+        
         return num1*2; //no of subsequences is power of 2
     }
 
@@ -51,10 +53,10 @@ public class recursion2 {
         int r=0;
         String ans=" ";
         String s="cat";
-        cointoss(N,ans);
-        subsequence(s,ans);
-        //System.out.println(subseqcount(s));
-        validparenthesis(N, l, r, ans);
+        // cointoss(N,ans);
+        //subsequence(s,ans);
+        System.out.println(subseqcount(s));
+        // validparenthesis(N, l, r, ans);
         
      }
     

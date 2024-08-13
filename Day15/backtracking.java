@@ -9,7 +9,7 @@ public class backtracking {
       if(i==arr.length) return true;
       if(sum>k) return false;
       //including current value in ans
-      sum+=arr[i]; //assuming
+      sum+=arr[i]; //assuming // else part of above if
       //checking if this can be included in final ans or not
       if(!backsumarray(arr,i+1,k)) // checking if previous i is stored in sum or not and whether satifies condiotion 10 or not
       {
@@ -32,7 +32,7 @@ public class backtracking {
         int[] arr={1,2,3,4,15,7};
         sumArray(arr,0,10);
         System.out.println(sum);
-        // System.out.println(backsumarray(arr, 0, 15));
+        System.out.println(backsumarray(arr, 0, 15));
        
      }
     
