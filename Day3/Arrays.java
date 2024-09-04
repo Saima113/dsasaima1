@@ -13,15 +13,14 @@ public class Arrays {
     public static int reverseNum(int n){
         int revnum =0;
         while(n>0){
-           
-           int lastdigit=n%10;
+            int lastdigit=n%10;
             revnum= revnum*10 + lastdigit;
             n=n/10;
-
         }
            return revnum;
         
     }
+    // to count the occurrences of a specific digit in a given integer
     public static int findLength(){
         Scanner sc= new Scanner (System.in);
         int n= sc.nextInt();
@@ -29,23 +28,30 @@ public class Arrays {
         int count=0;
         while(n>0){
             int ld=n%10;
-            if(ld==digit)
+           if(ld==digit)
             count++;
             n=n/10;
         }
         return count;
 
     }
+    public static int countDigits(int num) { //counting no of digits in the whole number
+        int count = 0;
+        while (num > 0) {
+            num /= 10;
+            count++;
+        }
+        return count;
+    }
     public static boolean Armstrong(){
         Scanner sc= new Scanner(System.in);
 		int n= sc.nextInt();
-        int c= findLength();
+        int c= countDigits(n);
         int temp =n;
         int sum=0;
         for(int i=1; i<=c; i++){
             sum+= Math.pow(temp%10, c);
             temp=temp/10;
-
         }
         if(n==sum){
             return true;
@@ -59,8 +65,7 @@ public class Arrays {
         for(int i=2; i<N; i++){
             if(N%i==0)
                 return false;
-            }
-            
+            }   
             
         return true;
     }
@@ -69,8 +74,10 @@ public class Arrays {
         arr[1]=10;
         arr[6]=25;
         arr[9]=76;
+        // System.out.println(findLength());
+        // System.out.println(Armstrong());
        
-       System.out.println(primeNumber());
+      System.out.println(primeNumber());
        
        
        

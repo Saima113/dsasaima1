@@ -33,25 +33,22 @@ public class Arrayques{
         System.out.print("b :"+b);
     }
 
-
-    public static void change(int[] adi, int i, int j)
-    {int temp= adi[i];
+    public static void change(int[] adi, int i, int j){
+        int temp = adi[i];
         adi[i]= adi[j];
-        adi[j]= temp;
-        
+        adi[j]= temp;    
     }
 
     public static void revarray(int[] arr){
         int i=0; int j=arr.length-1;
         while(i<j){
             change(arr, i++, j--);
-        }
-        
+        }    
     }
+
      public static void display(int[] arr){
         for(int i=0; i<arr.length; i++){
             System.out.print(+arr[i]+" ");
-
         }
      }
 
@@ -60,8 +57,6 @@ public class Arrayques{
             change(arr, i++, j--);
         }     
     }
-
-      
 
     public static int maxarr(int[] arr){
         int max= arr[0];
@@ -88,7 +83,7 @@ public class Arrayques{
         int[] ans= new int [arr.length];
         for(int i=0;i<arr.length-1;i++){
            int idx= minarr(arr, i);
-           
+
             int temp=arr[i];
             arr[i]= arr[idx];
             arr[idx]=temp; 
@@ -109,6 +104,8 @@ public class Arrayques{
     }
     public static void main(String[] args){
         int arr[]={17,4,3,12,81,22,1}; 
+        System.out.println(minarr(arr, 0));
+        System.out.println(selectionSort(arr));
         
 
     }
