@@ -2,18 +2,15 @@ package Day21;
 
 public class bank {
      public static void main (String[] args){
-        bankacc customer =new bankacc();
-        customer.name="amit";
-        customer.accnumber=76123;
-        customer.branch="rajouri garden";
-        customer.balance=650000;
-        // System.out.println(customer.balance);
-        // customer.deposit();
-        // System.out.println(customer.balance);
-        customer.withdraw();
+      //   bankacc customer =new bankacc("aman",765331,879066,"sde","pnb",2345);
+        
+      //   customer.withdraw();
 
-        System.out.println(customer.balance);
-        System.out.println(customer.branch);
+      //   System.out.println(customer.balance);
+      //   System.out.println(customer.branch);
+      B obj=new B();
+      // System.out.println(obj.A);
+      
      }
     
 }
