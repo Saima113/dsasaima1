@@ -1,7 +1,7 @@
 package Day22; //week6
 
 public class LinkedList {
-    class Node{
+    class Node{ //structure
         int data;
         Node next;
     }
@@ -92,8 +92,9 @@ public class LinkedList {
             tail=null;
         }else{
             Node temp=head;
-            head=head.next;
+            head=head.next; 
             temp.next=null; 
+           
         }
         size--;
         return rn;
